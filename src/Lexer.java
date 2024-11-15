@@ -33,17 +33,7 @@ public class Lexer {
         }
 
         /**
-         * gets the character at the current index and increases the index by 1
-         * @return the character at the current index
-         */
-        public char getChar(){
-            index++;
-            return input.charAt(index-1);
-        }
-
-        /**
          * increases the index by i
-         * @param i
          */
         public void swallow(int i){
             index += i;

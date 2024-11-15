@@ -7,7 +7,6 @@ public class Bit {
 
     /**
      * change the value of bit to match value
-     * @param value
      */
     public void set(boolean value){
         this.value=value;
@@ -17,10 +16,7 @@ public class Bit {
      * toggle bit true to false and false to true
      */
     public void toggle(){
-        if(value){
-            value=false;
-        }else
-            value=true;
+        value = !value;
     }
 
     /**
@@ -55,8 +51,8 @@ public class Bit {
     public Bit or(Bit other){
         Bit newBit = new Bit();
         newBit.set();
-        if(value==false){
-            if(other.getValue()==false){
+        if(!value){
+            if(!other.getValue()){
                 newBit.clear();
             }
         }
@@ -67,10 +63,10 @@ public class Bit {
         Bit newBit = new Bit();
         newBit.clear();
         if(value){
-            if(other.getValue()==false)
+            if(!other.getValue())
                 newBit.set();
         }
-        if(value==false){
+        if(!value){
             if(other.getValue())
                 newBit.set();
         }

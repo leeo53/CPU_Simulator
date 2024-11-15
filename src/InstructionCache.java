@@ -1,4 +1,3 @@
-import com.sun.org.apache.xpath.internal.operations.Neg;
 
 public class InstructionCache {
     private static Word[] words = new Word[9];

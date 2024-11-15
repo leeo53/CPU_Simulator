@@ -1,9 +1,6 @@
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import sun.applet.Main;
-
-import javax.annotation.processing.SupportedAnnotationTypes;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;

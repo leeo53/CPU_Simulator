@@ -102,7 +102,6 @@ public class ALU {
         Word sum1 = new Word();
         Word sum2 = new Word();
         Word sum = new Word();
-        int countOfTs=0;
         for(int i=0;i<32;i++){
             //S1 = W1 XOR W2 XOR cIn1
             sum1.setBit(i,word1.getBit(i).xor(word2.getBit(i)).xor(carryIn1));

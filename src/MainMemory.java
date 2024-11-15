@@ -15,8 +15,6 @@ public class MainMemory {
 
     /**
      * write value to address
-     * @param address
-     * @param value
      */
     public static void write(Word address, Word value){
         if(words[(int) address.getUnsigned()]==null)

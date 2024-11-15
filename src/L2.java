@@ -77,8 +77,6 @@ public class L2 {
 
     /**
      * uses write-through to write data to cache and memory
-     * @param address
-     * @param value
      */
     public static void write(Word address,Word value){
         if(recentGroup>=3){
